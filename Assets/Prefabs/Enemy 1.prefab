@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 552998171647826914}
   - component: {fileID: 3297211672464291680}
   - component: {fileID: -7672473485860653178}
-  m_Layer: 0
+  - component: {fileID: 7800674614461673154}
+  m_Layer: 7
   m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,6 +113,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+--- !u!114 &7800674614461673154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552998171647826915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd5b425683ec994cac37bb231d85860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8084871552907798389, guid: 2185e0cf59c8cd544adfba8375268432, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  baseFiringRate: 1
+  useAI: 1
+  firingRateVariance: 0.5
+  minimumFiringRate: 0.1
+  isFiring: 0
 --- !u!1 &552998172265980820
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 552998172265980823}
   - component: {fileID: 552998172265980822}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: playerShip3_green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +157,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552998172265980820}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -184,7 +205,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68fa5bc95556918469f3a52b92ae41da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

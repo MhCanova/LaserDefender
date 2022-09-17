@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1236032423358801837}
   - component: {fileID: 659514665}
-  - component: {fileID: 224079947068471241}
   - component: {fileID: -2860821043579632691}
   - component: {fileID: -6485385223510484301}
+  - component: {fileID: 224079947068471241}
   - component: {fileID: -550967893238950725}
-  m_Layer: 0
+  - component: {fileID: 2038503734532806224}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,23 +68,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &224079947068471241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5006397484053481001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6789f032226213b4d83ff19c2dea9357, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  paddingLeft: 0
-  paddingRight: 0
-  paddingTop: 0
-  paddingBottom: 0
 --- !u!50 &-2860821043579632691
 Rigidbody2D:
   serializedVersion: 4
@@ -121,6 +105,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.0057778656}
   serializedVersion: 2
   m_Radius: 0.37404278
+--- !u!114 &224079947068471241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006397484053481001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6789f032226213b4d83ff19c2dea9357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  paddingLeft: 0
+  paddingRight: 0
+  paddingTop: 0
+  paddingBottom: 0
 --- !u!114 &-550967893238950725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +134,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a0ba474b1d9654ca14aeb9d37b5ed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 50
+--- !u!114 &2038503734532806224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006397484053481001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd5b425683ec994cac37bb231d85860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8084871552907798389, guid: 198e8219a1bebeb4093c3a66102a65f5, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  firingRate: 0.2
+  isFiring: 0
 --- !u!1 &6451196263218037815
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4024147534711991454}
   - component: {fileID: 5307466683214552107}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: playerShip1_blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +224,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0cdbb20117be6a741a50b679ff4d3000, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
