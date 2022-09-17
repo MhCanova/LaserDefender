@@ -10,9 +10,12 @@ public class Health : MonoBehaviour
 
     CameraShake cameraShake;
 
+    AudioPlayer audioPlayer;
+
     void Awake() 
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
     void OnTriggerEnter2D(Collider2D other) 
