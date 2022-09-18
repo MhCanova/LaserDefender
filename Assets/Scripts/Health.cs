@@ -26,6 +26,7 @@ public class Health : MonoBehaviour
         {
             TakeDamage(damageDealer.GetDamage());
             PlayHitEffect();
+            audioPlayer.PlayDamageClip();
             ShakeCamera();
             damageDealer.Hit();
         }
